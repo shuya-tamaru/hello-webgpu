@@ -1,0 +1,17 @@
+{
+  "name": "hello-webgpu",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "npm run install-missing-dependencies && npm run server",
+    "install-missing-dependencies": "npm i",
+    "server": "http-server"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "http-server": "^14.1.1"
+  }
+}
