@@ -4,14 +4,23 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "npm run install-missing-dependencies && npm run server",
+    "start": "npm run install-missing-dependencies && npm run build && npm run serve",
     "install-missing-dependencies": "npm i",
-    "server": "http-server"
+    "build": "webpack --config webpack.config.js",
+    "serve": "live-server --cors"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "http-server": "^14.1.1"
+    "@types/node": "^22.10.5",
+    "@webgpu/types": "^0.1.52",
+    "http-server": "^14.1.1",
+    "live-server": "^1.2.2",
+    "ts-loader": "^9.5.2",
+    "ts-shader-loader": "^2.0.2",
+    "typescript": "^5.7.3",
+    "webpack": "^5.97.1",
+    "webpack-cli": "^6.0.1"
   }
 }
